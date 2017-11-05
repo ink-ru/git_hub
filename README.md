@@ -26,4 +26,5 @@ Python для Windows можно скачать [тут](https://www.python.org/
 
 Билитеки для работы с Excel необходимо предварительно установить:
 > sudo apt-get install python-setuptools
+
 > ```sudo easy_install xlwt``` или ```pip install xlwt```
