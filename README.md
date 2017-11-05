@@ -20,3 +20,10 @@ Python для Windows можно скачать [тут](https://www.python.org/
 
 Для вывода справки используйте ключ -h
 > stats.py -h
+
+# Библитеки Excel
+Если скрипт не находит библиотеки для работы с Excel, то данные будут записаны в CSV формате.
+
+Билитеки для работы с Excel необходимо предварительно установить
+> sudo apt-get install python-setuptools
+> sudo easy_install xlwt
