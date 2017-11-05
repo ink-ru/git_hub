@@ -24,7 +24,11 @@ Python для Windows можно скачать [тут](https://www.python.org/
 # Библитеки Excel
 Если скрипт не находит библиотеки для работы с Excel, то данные будут записаны в CSV формате.
 
-Билитеки для работы с Excel необходимо предварительно установить:
+Билитеки для работы с Excel необходимо предварительно установить необходимые модули:
 > sudo apt-get install python-setuptools
-
+Если в системе установлы обе версии Python, то мы не можем использовать команды для установки модулей:
 > ```sudo easy_install xlwt``` или ```pip install xlwt```
+для установки модулей для Python версии 3 необхидимо использовать pip3:
+> sudo apt-get -y install python3-pip
+> sudo pip3 install xlwt
+
