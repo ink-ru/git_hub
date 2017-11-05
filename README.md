@@ -11,7 +11,7 @@ Python для Windows можно скачать [тут](https://www.python.org/
 
 Теперь, если перейти в директорию со скриптом, можно dsgjkyznm команду без указания полных путей:
 > cd Documents
-> python .\stats.py -u https://github.com/ink-ru/git_hub/ -s https://github.com/ink-ru/git_hub/
+> python .\stats.py -u https://github.com/ink-ru/git_hub/ -s
 
 # Linux
 В современных дистрибутивах интерпретатор Pytyon установлен изначально. Для запуска программы используйте python версии 3 и выше:
