@@ -41,5 +41,6 @@ Python для Windows можно скачать [тут](https://www.python.org/
 для установки модулей для *Python* версии 3 необходимо использовать установщик `pip3`:
 > sudo apt-get -y install python3-pip
 
-> sudo pip3 install xlwt
+> pip3 install xlsxwriter
+<!-- > sudo pip3 install xlwt -->
 
