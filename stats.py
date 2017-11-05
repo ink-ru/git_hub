@@ -10,17 +10,17 @@ mode = 'CSV'
 
 if mode == 'CSV':
 	try:
+		import xlsxwriter 
+		mode = 'xlsxwriter'
+	except ImportError:
+		print("xlsxwriter module havn't been found.")
+
+if mode == 'CSV':
+	try:
 		import xlwt 
 		mode = 'xlwt'
 	except ImportError:
 		print("xlwt module havn't been found.")
-
-# if mode == 'CSV':
-# 	try:
-# 		import xlsxwriter 
-# 		mode = 'xlsxwriter'
-# 	except ImportError:
-# 		print("xlsxwriter module havn't been found.")
 
 # if mode == 'CSV':
 # 	try:
@@ -115,9 +115,10 @@ class write:
 
 	def write_xlwt(self, fname, data):
 		total = 0
-		# print('xlwt have been found')
+		
 		wb = xlwt.Workbook()
 		ws = wb.add_sheet(fname)
+
 		for records in data:
 				date = datetime.date.fromtimestamp(records['week'])
 				for record in records['days']:
@@ -133,11 +134,32 @@ class write:
 					date += datetime.timedelta(days=1)
 				# print('======= week row =======')
 		wb.save(fname + '.xls')
+
 		return True
 
 	def write_xlsxwriter(self, fname, data):
 		print('xlsxwriter have been found')
-		pass
+		total = 0
+		
+		workbook = xlsxwriter.Workbook(fname + '.xlsx')
+		worksheet = workbook.add_worksheet()
+
+		for records in data:
+				date = datetime.date.fromtimestamp(records['week'])
+				for record in records['days']:
+					if record != 0 or short == False:
+						# TODO: catching and reporting errors
+						rdate = str(date.strftime("%d-%m-%Y"))
+						print(rdate + ' => ' + str(record))
+						
+						worksheet.write(total, 0, rdate)
+						worksheet.write(total, 1, str(record))
+
+						total += 1
+					date += datetime.timedelta(days=1)
+				# print('======= week row =======')
+		workbook.close()
+
 		return True
 
 	def write_xlutils(self, fname, data):
