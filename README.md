@@ -36,7 +36,7 @@ Python для Windows можно скачать [тут](https://www.python.org/
 
 <!-- > sudo apt-get install python-setuptools -->
 Для работы с Excel необходимо предварительно установить необходимые модули. Если в системе установлены обе версии *Python*, то мы не можем использовать обычные команды для установки модулей:
-> ```sudo easy_install xlwt``` или ```pip install xlwt```
+> ```sudo easy_install xlsxwriter``` или ```pip install xlsxwriter```
 
 для установки модулей для *Python* версии 3 необходимо использовать установщик `pip3`:
 > sudo apt-get -y install python3-pip
