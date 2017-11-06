@@ -31,6 +31,8 @@ Python для Windows можно скачать [тут](https://www.python.org/
 
 ```python3 stats.py -u URL -s```
 
+<!-- https://stackoverflow.com/questions/15587877/run-a-python-script-in-terminal-without-the-python-command -->
+
 # Библиотеки Excel
 Если скрипт не находит библиотеки для работы с Excel, то данные будут записаны в CSV формате.
 
