@@ -46,3 +46,17 @@ Python для Windows можно скачать [тут](https://www.python.org/
 > pip3 install xlsxwriter
 <!-- > sudo pip3 install xlwt -->
 
+## Ссылки
+
+http://ghv.artzub.com/
+
+https://developer.github.com/v3/repos/statistics/
+http://pygithub.readthedocs.io/en/latest/github_objects.html
+https://media.readthedocs.org/pdf/pygithub/stable/pygithub.pdf
+
+<!-- get_stats_commit_activity
+
+https://github.com/ink-ru/sublime-snippets/graphs/commit-activity
+https://api.github.com/repos/PyGithub/PyGithub/stats/commit_activity -->
+
+
